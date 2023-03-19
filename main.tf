@@ -77,7 +77,7 @@ echo "<!DOCTYPE html>
 <html lang="en-US">
 <body>
 
-<h1>My Web Page</h1>
+<h1>surya Web Page</h1>
 
 <div id="piechart"></div>
 
