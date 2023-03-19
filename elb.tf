@@ -1,5 +1,5 @@
 resource "aws_elb" "bar" {
-  name               = "siva-terraform-elb"
+  name               = "reddy-terraform-elb"
   availability_zones = ["ap-south-1a", "ap-south-1b"]
 
   listener {
