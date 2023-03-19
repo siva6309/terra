@@ -94,7 +94,7 @@ body {
 </body>
 </html>
 
-"
+" > /var/www/html/index.html
 EOF
   tags = {
     Name = "server-2"
