@@ -21,7 +21,7 @@ echo "<!DOCTYPE html>
 <html lang="en-US">
 <body>
 
-<h1>siva Web Page</h1>
+<h1>this is bramha Web Page</h1>
 
 <div id="piechart"></div>
 
@@ -54,7 +54,7 @@ function drawChart() {
 
 </body>
 </html>
-" > /var/www/html/index.html
+" >> /var/www/html/index.html
 EOF
   tags = {
     Name = "server-1"
@@ -94,7 +94,7 @@ body {
 </body>
 </html>
 
-" > /var/www/html/index.html
+" >> /var/www/html/index.html
 EOF
   tags = {
     Name = "server-2"
