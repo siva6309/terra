@@ -142,7 +142,7 @@ resource "aws_security_group" "three" {
 }
 
 resource "aws_s3_bucket" "four" {
-  bucket = "sivashankar -terras3"
+  bucket = "sivashankar-terras3"
 }
 
 
