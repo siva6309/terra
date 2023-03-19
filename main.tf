@@ -17,43 +17,28 @@ sudo -i
 yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
-echo "<!DOCTYPE html>
-<html lang="en-US">
+echo <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+</style>
+</head>
 <body>
 
-<h1>this is bramha Web Page</h1>
+<p>Convert the image to grayscale:</p>
 
-<div id="piechart"></div>
+<img src="pineapple.jpg" alt="Pineapple" width="300" height="300">
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Task', 'Hours per Day'],
-  ['Work', 8],
-  ['Eat', 2],
-  ['TV', 4],
-  ['Gym', 2],
-  ['Sleep', 8]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'My Average Day', 'width':550, 'height':400};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-</script>
+<p><strong>Note:</strong> The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.</p>
 
 </body>
 </html>
+
 " >> /var/www/html/index.html
 EOF
   tags = {
